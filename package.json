@@ -1,5 +1,5 @@
 {
-  "name": "vue-todo-app",
+  "name": "vue-todoapp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "pinia": "^2.1.6",
-    "vue": "^3.3.4",
-    "vue-router": "^4.2.4"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",

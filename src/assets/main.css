@@ -1,35 +1,47 @@
-@import './base.css';
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+.container .top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.container .input {
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.input input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  outline-color: none;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.top-container .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button button {
+  padding: 0px 10px;
+  margin-top: 18px;
+  font-size: 32px;
+}
+
+
+.mark-done {
+  text-decoration: line-through;
+  font-style: italic;
+  color: grey;
 }
